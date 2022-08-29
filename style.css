@@ -1,24 +1,32 @@
 body{
     background: snow;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .card{
+    box-sizing: content-box;
     background-color: #dbf1d7;
-    width: 400px;
+    width: fit-content;
+    height: fit-content;
     padding: 20px;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50% , -50%);
     box-shadow: 0 3px 10px rgb(0 0 0);
+    /* border-radius: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .result{
-    font-size: 5em;
+    font-size: 5rem;
     line-height: 1.3em;
     text-align: center;
-    /* color: #221f1f; */
-
 }
 
 .message{
@@ -28,4 +36,19 @@ body{
     font-size: 4.5vh;
     line-height: 6vh;
     min-height: 6vh;
+}
+
+@media screen and (max-width:"400px") {
+    .card{
+        width: fit-content;
+    }
+
+    .result{
+        font-size: 3vh;
+    }
+
+    .message{
+        font-size: 2vh;
+    }
+    
 }
