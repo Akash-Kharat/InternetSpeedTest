@@ -28,7 +28,7 @@ if(window.addEventListener){
       }
       
       download.onerror = function (err, msg) {
-          ShowProgressMessage("You are not Connected!");
+          ShowProgressMessage("Resource Error! ");
       }
       
       startTime = (new Date()).getTime();
